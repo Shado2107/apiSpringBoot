@@ -18,9 +18,9 @@ public class BlogUserDetails implements UserDetails {
     public BlogUserDetails(User user){
         username = user.getUsername();
         password = user.getPassword();
-        roles = Arrays.stream(user.getRoles().split(","))
-                    .map(SimpleGrantedAuthority::new)
-                    .collect(Collectors.toList());
+       // roles = Arrays.stream(user.getRoles().split(","))
+       //             .map(SimpleGrantedAuthority::new)
+      //              .collect(Collectors.toList());
     }
 
     @Override
